@@ -51,10 +51,8 @@ header{
 #pokemon-container1{ 
   padding-top: 2%;
   padding-bottom: 3%;
-  max-width: 90%;
+  max-width: 95%;
   min-height: 600px;
-  // display: flex;
-  // flex-wrap: wrap;
   justify-content: center;
   text-align: $text-center;
   font-size: 16px;
@@ -64,9 +62,8 @@ header{
   max-height: 275px;
 }
 .pokemon-cards{
-  width: 25%;
-  // margin: 1%;
-  // padding-bottom: 0;
+  width: 15%;
+  height: 0%;
   max-width: 250px;
   @include rounded-corner(5px);
   @include box-shadow();
