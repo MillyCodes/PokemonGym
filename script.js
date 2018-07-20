@@ -22,6 +22,8 @@ Promise.all([
   renderList(milly); 
 });
 
+
+
 function renderList(trainer){
   let pokeList = trainer.myPokemonList;
   let context = {

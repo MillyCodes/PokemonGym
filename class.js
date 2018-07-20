@@ -1,6 +1,7 @@
 class Trainer {
-    constructor (){
-        this.party = [];
+    constructor (name){
+        this.name = name;
+        this.myPokemonList = {};
     }
 
     all() {
@@ -19,7 +20,9 @@ class Trainer {
             let abilities = data.abilities.map((element) => element.ability.name);
             let sprite = data.sprites.front_default;
             let newPoke = new Pokemon(name, sprite, hp, attack, defense, abilities);
-            this.party.push(newPoke);
+            console.log(`${poke} added sucessfully`);
+            console.log(newPoke)
+            this.myPokemonList[newPoke.name] = newPoke
         });
     }
 }
@@ -50,44 +53,69 @@ Promise.all([
     PokeTom.add(3),
     PokeTom.add(89),
   ]).then(() => {
-    console.log(MillyFlannery.all())
-    console.log(Marian.all());
-    console.log(PokeTom.all());
+    // console.log(MillyFlannery.all())
+    // console.log(Marian.all());
+    // console.log(PokeTom.all());
+    renderList1(MillyFlannery);
+    renderList2(Marian);
+    renderList3(PokeTom);
+
   });
 
+// render handlebars function
+
+let theTemplateScript = $("#pokemon-template").html();
+// Compile the template
+let theTemplate = Handlebars.compile(theTemplateScript);
 
 
+function renderList1(trainer){
+    let pokeList = trainer.myPokemonList;
+    let context = {
+      content: pokeList
+    };
+  
+    // Pass my data to the template
+    const theCompiledHtml = theTemplate(context);
+  
+    // Add the compiled html to the page
+    // Why use jQuery here? DOMElement.append('htmlString') doesn't transform the html string 
+    // into dom elements $jqueryElement.append('htmlString') does
+    let container = $('#pokemon-container1')
+    console.log(theCompiledHtml)
+    container.append(theCompiledHtml);
+  }
+  
+  function renderList2(trainer){
+    let pokeList = trainer.myPokemonList;
+    let context = {
+      content: pokeList
+    };
+  
+    // Pass my data to the template
+    const theCompiledHtml = theTemplate(context);
+  
+    // Add the compiled html to the page
+    // Why use jQuery here? DOMElement.append('htmlString') doesn't transform the html string 
+    // into dom elements $jqueryElement.append('htmlString') does
+    let container = $('#pokemon-container2')
+    console.log(theCompiledHtml)
+    container.append(theCompiledHtml);
+    }
 
-
-
-
-
-
-
-
-
-
-
-//------------------ABILITY TYPOGRAPHY------------------
-// let ability1 = PokeTom.party[targetPoke].abilities[0];
-//     if(ability1.includes("-")){
-//         let abilityArray = ability1.split("");
-//         console.log(abilityArray.indexOf("-") + 1);
-//         abilityArray.splice(ability1.indexOf("-"), 1, " ");
-//         ability1 = abilityArray.join("");
-//         abilityLetter = ability1.charAt(ability1.indexOf(" ") + 1).toUpperCase();
-//         ability1 = ability1.charAt(0).toUpperCase() + ability1.slice(1, ability1.indexOf(" ") + 1) + ability1.charAt(ability1.indexOf(" ") + 1).toUpperCase() + ability1.slice(ability1.indexOf(" ") + 2);
-//     };
-
-//     let ability2 = PokeTom.party[targetPoke].abilities[1];
-//     if(ability2.includes("-")){
-//         let abilityArray = ability2.split("");
-//         console.log(abilityArray.indexOf("-") + 1);
-//         abilityArray.splice(ability2.indexOf("-"), 1, " ");
-//         ability2 = abilityArray.join("");
-//         abilityLetter = ability2.charAt(ability2.indexOf(" ") + 1).toUpperCase();
-//         ability2 = ability2.charAt(0).toUpperCase() + ability2.slice(1, ability2.indexOf(" ") + 1) + ability2.charAt(ability2.indexOf(" ") + 1).toUpperCase() + ability2.slice(ability2.indexOf(" ") + 2);
-//     };
-
-//     abilityDisplay1.innerText = ability1;
-//     abilityDisplay2.innerText = ability2;
+    function renderList3(trainer){
+        let pokeList = trainer.myPokemonList;
+        let context = {
+          content: pokeList
+        };
+      
+        // Pass my data to the template
+        const theCompiledHtml = theTemplate(context);
+      
+        // Add the compiled html to the page
+        // Why use jQuery here? DOMElement.append('htmlString') doesn't transform the html string 
+        // into dom elements $jqueryElement.append('htmlString') does
+        let container = $('#pokemon-container3')
+        console.log(theCompiledHtml)
+        container.append(theCompiledHtml);
+    }
