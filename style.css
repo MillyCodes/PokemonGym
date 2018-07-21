@@ -65,18 +65,29 @@ header {
   font-weight: 500; }
 
 footer {
-  color: white;
-  background-color: red;
-  padding: 1%;
-  margin: 0px;
-  text-align: center;
-  background-color: #66A612; }
-  footer a {
+  width: 80%;
+  display: flex;
+  color: white; }
+  footer ul li {
     text-decoration: none; }
+  footer ul li:hover {
+    animation: pulse 2s infinite; }
+  footer h5 {
+    font-size: 14px; }
 
 .pika {
   animation: bounce 2s; }
 
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
 @keyframes bounce {
   from,
   20%,
