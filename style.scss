@@ -29,7 +29,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
-  background: url("img/pokebg.png") no-repeat center center fixed;
+  background-color: $green;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,8 +38,8 @@ body {
 
 header{
   padding: 1% 1% 0%;
-  background-color: $red;
-  border-bottom: 10px solid #000;
+  background-color: $black;
+  border-bottom: 10px solid $red;
       h1{
         color: $white;
       }
@@ -48,10 +48,11 @@ header{
 
 
 
-#pokemon-container1{ 
+#pokemon-container1, #pokemon-container2, #pokemon-container3{ 
+  background-color: #66A612;
   padding-top: 2%;
   padding-bottom: 3%;
-  max-width: 95%;
+  max-width: 90%;
   min-height: 600px;
   justify-content: center;
   text-align: $text-center;
@@ -59,10 +60,12 @@ header{
 }
 
 .trainer {
+  width: 15%;
   max-height: 275px;
 }
 .pokemon-cards{
-  width: 15%;
+  margin: 1px;
+  width: 19%;
   height: 0%;
   max-width: 250px;
   @include rounded-corner(5px);
