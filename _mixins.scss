@@ -7,7 +7,7 @@
 @mixin box-shadow(){
         border: 1px solid;
         padding: 10px;
-        box-shadow: 6px 13px yellow;
+        box-shadow: 6px 13px rgb(68, 65, 65);
         
 }
 @mixin apply-height-times100($height){
