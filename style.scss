@@ -37,9 +37,11 @@ body {
 }
 
 header{
+  display: flex;
+  justify-content: space-between;
   padding: 1% 1% 0%;
   background-color: $black;
-  border-bottom: 10px solid $red;
+  border-bottom: 8px solid $red;
       h1{
         color: $white;
       }
@@ -49,7 +51,7 @@ header{
 
 
 #pokemon-container1, #pokemon-container2, #pokemon-container3{ 
-  background-color: #66A612;
+  background-image: url('img/water-background.jpg');
   padding-top: 2%;
   padding-bottom: 3%;
   max-width: 100%;
@@ -88,6 +90,7 @@ header{
           }
 footer{
   color: $white;
+  background-color: red;
   padding: 1%;
   margin: 0px;
   text-align: $text-center;
@@ -96,6 +99,42 @@ footer{
     text-decoration: none;
   }
 }
+
+.pika{
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+  }
+  70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+  }
+  90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+  }
+}
+
+
 
 
 /* comment */
