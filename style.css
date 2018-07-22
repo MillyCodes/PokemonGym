@@ -13,7 +13,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Russo One', sans-serif;
-  background-color: #66A612;
+  background-color: rgba(141, 201, 219, 0.9);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,6 +30,7 @@ header {
 
 #pokemon-container1, #pokemon-container2, #pokemon-container3 {
   background-image: url("img/water-background.jpg");
+  background-attachment: fixed;
   padding-top: 2%;
   padding-bottom: 3%;
   max-width: 100%;
@@ -62,26 +63,6 @@ header {
 
 .stats {
   font-weight: 500; }
-
-footer {
-<<<<<<< HEAD
-  width: 80%;
-  display: flex;
-  color: white; }
-  footer ul li {
-=======
-  color: white;
-  padding: 1%;
-  margin: 0px;
-  text-align: center;
-  background-color: #ee1515; }
-  footer a {
->>>>>>> master
-    text-decoration: none; }
-  footer ul li:hover {
-    animation: pulse 2s infinite; }
-  footer h5 {
-    font-size: 14px; }
 
 .pika {
   animation: bounce 2s; }
@@ -120,6 +101,37 @@ footer {
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
-/* comment */
+/* INTRO PAGE STYLING */
+#intro-container {
+  display: flex;
+  background-color: rgba(141, 201, 219, 0.9);
+  width: 100%;
+  height: 720px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  background-size: 1680px 700px;
+  background-image: url("https://federicodecalifornia.files.wordpress.com/2010/04/neptune1.jpg"); }
+
+#intro-graph {
+  width: 25%;
+  height: 40%;
+  margin: 12% 10% 0px 0px;
+  padding: 35px;
+  font-size: 90%;
+  color: black;
+  background: rgba(141, 201, 219, 0.9); }
+
+#welcome-header {
+  font-size: 2.5em; }
+
+#trainer-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.hero-trainer {
+  height: 500px;
+  width: 259px; }
 
 /*# sourceMappingURL=style.css.map */
