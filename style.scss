@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 $text-center: center;
 
 // @import 'colors';
 $red: #ee1515;
 $white: white;
-$grey: #f0f0f0;
+$grey: lightgrey;
 $black: #222224;
 $green: #66A612;
 
@@ -28,7 +28,7 @@ $green: #66A612;
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Russo One', sans-serif;
   background-color: $green;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -66,13 +66,13 @@ header{
   max-height: 275px;  
 }
 .pokemon-cards{
-  margin: 1px;
-  width: 16%;
+  width: 15%;
+  margin: 1%;
   height: 0%;
   max-width: 250px;
   @include rounded-corner(5px);
   @include box-shadow();
-  background-color: $white;
+  background-color: $grey;
   border: 1px solid $red;
   // opacity: .6;
 
@@ -92,6 +92,7 @@ footer{
   width: 80%;
   display:flex;
   color: $white;
+<<<<<<< HEAD
   // background-color: red;
   // padding: 1%;
   // margin: 0px;
@@ -99,6 +100,13 @@ footer{
   // background-color: $green;
   ul{
     li{
+=======
+  padding: 1%;
+  margin: 0px;
+  text-align: $text-center;
+  background-color: $red;
+  a{
+>>>>>>> master
     text-decoration: none;
     }
     li:hover{

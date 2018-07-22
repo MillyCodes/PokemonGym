@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
 * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -13,7 +12,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Russo One', sans-serif;
   background-color: #66A612;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,8 +43,8 @@ header {
   max-height: 275px; }
 
 .pokemon-cards {
-  margin: 1px;
-  width: 16%;
+  width: 15%;
+  margin: 1%;
   height: 0%;
   max-width: 250px;
   -moz-border-radius: 5px;
@@ -53,8 +52,8 @@ header {
   border-radius: 5px;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 6px 13px yellow;
-  background-color: white;
+  box-shadow: 6px 13px #444141;
+  background-color: lightgrey;
   border: 1px solid #ee1515; }
   .pokemon-cards:hover {
     opacity: 1; }
@@ -65,10 +64,19 @@ header {
   font-weight: 500; }
 
 footer {
+<<<<<<< HEAD
   width: 80%;
   display: flex;
   color: white; }
   footer ul li {
+=======
+  color: white;
+  padding: 1%;
+  margin: 0px;
+  text-align: center;
+  background-color: #ee1515; }
+  footer a {
+>>>>>>> master
     text-decoration: none; }
   footer ul li:hover {
     animation: pulse 2s infinite; }
