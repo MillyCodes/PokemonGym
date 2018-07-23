@@ -89,37 +89,33 @@ header{
             font-weight: 500;
           }
 footer{
-  width: 80%;
+  width: 100%;
   display:flex;
   color: $white;
-<<<<<<< HEAD
-  // background-color: red;
-  // padding: 1%;
-  // margin: 0px;
-  // text-align: $text-center;
-  // background-color: $green;
-  ul{
-    li{
-=======
-  padding: 1%;
-  margin: 0px;
+  justify-content: space-between;
   text-align: $text-center;
-  background-color: $red;
-  a{
->>>>>>> master
-    text-decoration: none;
-    }
+  background-color: $black;
+  border-top:  8px solid $red;
+   
+  ul{
+    color:white;
+    
     li:hover{
       animation: pulse 2s infinite;
     }
   }
-   h5{
-     font-size:14px;
+   h5{    
+     font-size:16px;
+     
    }
 }
 
 .pika{
   animation: bounce 2s;
+}
+
+.py-2{
+  margin-right: 10%;
 }
 @keyframes pulse {
   from {
@@ -137,6 +133,7 @@ footer{
     transform: scale3d(1, 1, 1);
   }
 }
+
 
 @keyframes bounce {
   from,
