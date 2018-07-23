@@ -199,9 +199,23 @@ header{
   padding: 35px;
   font-size: 90%;
   color: black;
-  background: rgba(141, 201, 219, 0.9)
+  background: rgba(141, 201, 219, 0.9);
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight 1s forwards;
+}
 
 #welcome-header{
   font-size: 2.5em;
