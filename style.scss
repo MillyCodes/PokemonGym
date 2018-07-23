@@ -180,7 +180,7 @@ footer{
   display: flex;
   background-color: rgba(141, 201, 219, 0.9);
   width: 100%;
-  height: 720px;
+  height: 710px;
   // margin: 4% 0% 4% 0%;
   background-repeat: no-repeat;
   display: flex;
@@ -197,6 +197,7 @@ footer{
   font-size: 90%;
   color: black;
   background: rgba(141, 201, 219, 0.9);
+  visibility: hidden;
 }
 
 @keyframes slideInRight {
@@ -211,7 +212,7 @@ footer{
 }
 
 .slideInRight {
-  animation-name: slideInRight 1s forwards;
+  animation: slideInRight 1.3s forwards;
 }
 
 #welcome-header{
