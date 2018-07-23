@@ -119,3 +119,8 @@ function renderList1(trainer){
         console.log(theCompiledHtml)
         container.append(theCompiledHtml);
     }
+
+
+
+
+

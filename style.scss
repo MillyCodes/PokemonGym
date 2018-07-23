@@ -227,3 +227,32 @@ footer{
   height: 500px;
   width: 259px;
 }
+
+
+
+#tv{
+
+  width: 100%;
+  width: 100%;
+
+  #intro-tv{
+    width: 100%;
+    height: 100%;
+    #frame{
+      background-image: url('img/pokemon.mp4');
+      width: 67%;
+      height: 1000px;
+      position: absolute;
+      left:18%;
+      top:190%;
+      z-index: -6;
+    }
+      #tvsize{
+        width: 100%;
+        
+        
+      }
+      
+    }
+  
+}
