@@ -29,7 +29,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Russo One', sans-serif;
-  background-color: $green;
+  background-color: rgba(141, 201, 219, 0.9);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,6 +52,7 @@ header{
 
 #pokemon-container1, #pokemon-container2, #pokemon-container3{ 
   background-image: url('img/water-background.jpg');
+  background-attachment: fixed;
   padding-top: 2%;
   padding-bottom: 3%;
   max-width: 100%;
@@ -88,6 +89,37 @@ header{
 .stats{
             font-weight: 500;
           }
+<<<<<<< HEAD
+// footer{
+//   width: 80%;
+//   display:flex;
+//   color: $white;
+// <<<<<<< HEAD
+//   // background-color: red;
+//   // padding: 1%;
+//   // margin: 0px;
+//   // text-align: $text-center;
+//   // background-color: $green;
+//   ul{
+//     li{
+// =======
+//   padding: 1%;
+//   margin: 0px;
+//   text-align: $text-center;
+//   background-color: $red;
+//   a{
+// >>>>>>> master
+//     text-decoration: none;
+//     }
+//     li:hover{
+//       animation: pulse 2s infinite;
+//     }
+//   }
+//    h5{
+//      font-size:14px;
+//    }
+// }
+=======
 footer{
   width: 100%;
   display:flex;
@@ -109,6 +141,7 @@ footer{
      
    }
 }
+>>>>>>> master
 
 .pika{
   animation: bounce 2s;
@@ -168,4 +201,63 @@ footer{
 
 
 
-/* comment */
+/* INTRO PAGE STYLING */
+
+// #intro-page{
+//   display: flex;
+//   align-content: center;
+// }
+
+#intro-container {
+  display: flex;
+  background-color: rgba(141, 201, 219, 0.9);
+  width: 100%;
+  height: 720px;
+  // margin: 4% 0% 4% 0%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  background-size: 1680px 700px;
+  background-image: url("https://federicodecalifornia.files.wordpress.com/2010/04/neptune1.jpg");
+}
+
+#intro-graph {
+  width: 25%;
+  height: 40%;
+  margin: 12% 10% 0px 0px;
+  padding: 35px;
+  font-size: 90%;
+  color: black;
+  background: rgba(141, 201, 219, 0.9);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight 1s forwards;
+}
+
+#welcome-header{
+  font-size: 2.5em;
+}
+
+#trainer-selection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.hero-trainer {
+  height: 500px;
+  width: 259px;
+}
