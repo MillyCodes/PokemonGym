@@ -124,7 +124,7 @@ footer {
   display: flex;
   background-color: rgba(141, 201, 219, 0.9);
   width: 100%;
-  height: 720px;
+  height: 710px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row-reverse;
@@ -138,7 +138,8 @@ footer {
   padding: 35px;
   font-size: 90%;
   color: black;
-  background: rgba(141, 201, 219, 0.9); }
+  background: rgba(141, 201, 219, 0.9);
+  visibility: hidden; }
 
 @keyframes slideInRight {
   from {
@@ -147,7 +148,7 @@ footer {
   to {
     transform: translate3d(0, 0, 0); } }
 .slideInRight {
-  animation-name: slideInRight 1s forwards; }
+  animation: slideInRight 1.3s forwards; }
 
 #welcome-header {
   font-size: 2.5em; }
