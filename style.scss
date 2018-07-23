@@ -89,6 +89,7 @@ header{
 .stats{
             font-weight: 500;
           }
+<<<<<<< HEAD
 // footer{
 //   width: 80%;
 //   display:flex;
@@ -118,9 +119,36 @@ header{
 //      font-size:14px;
 //    }
 // }
+=======
+footer{
+  width: 100%;
+  display:flex;
+  color: $white;
+  justify-content: space-between;
+  text-align: $text-center;
+  background-color: $black;
+  border-top:  8px solid $red;
+   
+  ul{
+    color:white;
+    
+    li:hover{
+      animation: pulse 2s infinite;
+    }
+  }
+   h5{    
+     font-size:16px;
+     
+   }
+}
+>>>>>>> master
 
 .pika{
   animation: bounce 2s;
+}
+
+.py-2{
+  margin-right: 10%;
 }
 @keyframes pulse {
   from {
@@ -138,6 +166,7 @@ header{
     transform: scale3d(1, 1, 1);
   }
 }
+
 
 @keyframes bounce {
   from,
