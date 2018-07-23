@@ -21,11 +21,45 @@ class Trainer {
             let sprite = data.sprites.front_default;
             let newPoke = new Pokemon(name, sprite, hp, attack, defense, abilities);
             console.log(`${poke} added sucessfully`);
-            console.log(newPoke)
-            this.myPokemonList[newPoke.name] = newPoke
+            console.log(newPoke);
+            this.myPokemonList[newPoke.name] = newPoke;
+
+            // for (let el of abilities){
+            //     if(el.includes("-")){
+            //         let miniArray = el.split("");
+            //         miniArray.splice(el.indexOf("-"), 1, " ");
+            //         el = miniArray.join("");
+            //         el = el.charAt(0).toUpperCase() + el.slice(1, el.indexOf(" ") + 1) + el.charAt(el.indexOf(" ") + 1).toUpperCase() + el.slice(el.indexOf(" ") + 2);
+            //     } else {
+            //         el = el.charAt(0).toUpperCase() + el.slice(1, el.length - 1);
+            //     }
+            // }
         });
     }
 }
+
+// let ability1 = PokeTom.party[targetPoke].abilities[0];
+//     if(ability1.includes("-")){
+//         let abilityArray = ability1.split("");
+//         console.log(abilityArray.indexOf("-") + 1);
+//         abilityArray.splice(ability1.indexOf("-"), 1, " ");
+//         ability1 = abilityArray.join("");
+//         abilityLetter = ability1.charAt(ability1.indexOf(" ") + 1).toUpperCase();
+//         ability1 = ability1.charAt(0).toUpperCase() + ability1.slice(1, ability1.indexOf(" ") + 1) + ability1.charAt(ability1.indexOf(" ") + 1).toUpperCase() + ability1.slice(ability1.indexOf(" ") + 2);
+//     };
+
+//     let ability2 = PokeTom.party[targetPoke].abilities[1];
+//     if(ability2.includes("-")){
+//         let abilityArray = ability2.split("");
+//         console.log(abilityArray.indexOf("-") + 1);
+//         abilityArray.splice(ability2.indexOf("-"), 1, " ");
+//         ability2 = abilityArray.join("");
+//         abilityLetter = ability2.charAt(ability2.indexOf(" ") + 1).toUpperCase();
+//         ability2 = ability2.charAt(0).toUpperCase() + ability2.slice(1, ability2.indexOf(" ") + 1) + ability2.charAt(ability2.indexOf(" ") + 1).toUpperCase() + ability2.slice(ability2.indexOf(" ") + 2);
+//     };
+
+//     abilityDisplay1.innerText = ability1;
+//     abilityDisplay2.innerText = ability2;
 
 class Pokemon {
     constructor(name, sprite, hp, attack, defense, abilities) {
@@ -53,9 +87,6 @@ Promise.all([
     PokeTom.add(3),
     PokeTom.add(89),
   ]).then(() => {
-    // console.log(MillyFlannery.all())
-    // console.log(Marian.all());
-    // console.log(PokeTom.all());
     renderList1(MillyFlannery);
     renderList2(Marian);
     renderList3(PokeTom);

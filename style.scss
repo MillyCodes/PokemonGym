@@ -180,6 +180,7 @@ footer{
   display: flex;
   background-color: rgba(141, 201, 219, 0.9);
   width: 100%;
+  // height: 100%;
   height: 710px;
   // margin: 4% 0% 4% 0%;
   background-repeat: no-repeat;
@@ -191,13 +192,16 @@ footer{
 
 #intro-graph {
   width: 25%;
-  height: 40%;
-  margin: 12% 10% 0px 0px;
+  margin: 12% 10% 10% 0px;
   padding: 35px;
   font-size: 90%;
   color: black;
   background: rgba(141, 201, 219, 0.9);
   visibility: hidden;
+}
+
+#text-wrap {
+  height: 0%;
 }
 
 @keyframes slideInRight {
