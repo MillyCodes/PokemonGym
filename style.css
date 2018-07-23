@@ -64,27 +64,25 @@ header {
   font-weight: 500; }
 
 footer {
-<<<<<<< HEAD
-  width: 80%;
+  width: 100%;
   display: flex;
-  color: white; }
-  footer ul li {
-=======
   color: white;
-  padding: 1%;
-  margin: 0px;
+  justify-content: space-between;
   text-align: center;
-  background-color: #ee1515; }
-  footer a {
->>>>>>> master
-    text-decoration: none; }
-  footer ul li:hover {
-    animation: pulse 2s infinite; }
+  background-color: #222224;
+  border-top: 8px solid #ee1515; }
+  footer ul {
+    color: white; }
+    footer ul li:hover {
+      animation: pulse 2s infinite; }
   footer h5 {
-    font-size: 14px; }
+    font-size: 16px; }
 
 .pika {
   animation: bounce 2s; }
+
+.py-2 {
+  margin-right: 10%; }
 
 @keyframes pulse {
   from {
