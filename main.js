@@ -8,6 +8,21 @@ document.addEventListener("scroll", (event) => {
 });
 
 
+let btn = document.getElementById('pwr');
+let mp4 = document.getElementById('frame');
+let x =0;
+
+btn.onclick = (e) => {
+//    mp4.play()
+   if (x===0) {
+    mp4.play(); 
+    x = 1;
+   }
+    else if (x === 1){
+    mp4.pause(); 
+  x = 0;
+    }
+}
 
 
 
