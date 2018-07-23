@@ -1,4 +1,11 @@
+let introText = document.getElementById("intro-graph");
 
+document.addEventListener("scroll", (event) => {
+    if(window.scrollY > 320) {
+        introText.style.visibility = "initial";
+        introText.classList.add("slideInRight");
+      }
+});
 
 
 
