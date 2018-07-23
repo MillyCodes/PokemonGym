@@ -40,3 +40,4 @@ function renderList(trainer){
   console.log(theCompiledHtml)
   container.append(theCompiledHtml);
 }
+
