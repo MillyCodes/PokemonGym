@@ -63,7 +63,6 @@ Promise.all([
   });
 
 // render handlebars function
-
 let theTemplateScript = $("#pokemon-template").html();
 // Compile the template
 let theTemplate = Handlebars.compile(theTemplateScript);
@@ -119,8 +118,3 @@ function renderList1(trainer){
         console.log(theCompiledHtml)
         container.append(theCompiledHtml);
     }
-
-
-
-
-
